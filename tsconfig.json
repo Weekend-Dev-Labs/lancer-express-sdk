@@ -12,8 +12,5 @@
         "esModuleInterop": true,
         "moduleResolution": "node",
         "preserveConstEnums": true,
-        "typeRoots": [
-            "@types/*"
-        ]
     }
 }
