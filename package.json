@@ -24,9 +24,9 @@
         "clean": "rimraf ./dist",
         "build": "rimraf ./dist && tsc --incremental false"
     },
-    "keywords": [    ],
-    
+    "keywords": [],
     "devDependencies": {
+        "@types/express": "^5.0.0",
         "@types/node": "^22.10.5",
         "@typescript-eslint/eslint-plugin": "^8.13.0",
         "@typescript-eslint/parser": "^8.13.0",
@@ -38,5 +38,8 @@
         "prettier": "^3.2.5",
         "rimraf": "^6.0.1",
         "typescript": "^5.7.3"
+    },
+    "dependencies": {
+        "@types/lancer": "github:Weekend-Dev-Labs/lancer-types"
     }
 }
