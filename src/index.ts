@@ -46,3 +46,5 @@ function lancer({ signingSecret }: { signingSecret: string }) {
         webhook,
     }
 }
+
+export default lancer
