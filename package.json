@@ -3,7 +3,7 @@
     "description": "Lancer server sdk for express.js",
     "version": "1.0.0",
     "license": "MIT",
-    "main": "lancer-express-sdk.js",
+    "main": "./dist/index.js",
     "type": "module",
     "homepage": "https://github.com/Weekend-Dev-Labs/lancer-express-sdk#readme",
     "bugs": "https://github.com/Weekend-Dev-Labs/lancer-express-sdk/issues",

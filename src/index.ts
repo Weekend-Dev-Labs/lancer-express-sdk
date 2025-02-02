@@ -41,18 +41,17 @@ function lancer({ signingSecret }: { signingSecret: string }) {
             next: e.NextFunction,
         ) => {
             const authHeader = req.headers?.authorization?.split(' ')[1]
-
             if (!authHeader) {
                 return res.status(403).send()
             }
             const body = req.body as lancerTypes.SessionRequest
+
             if (
                 body.chunk_size &&
                 body.file_name &&
                 body.file_size &&
                 body.max_chunk &&
-                body.max_chunk &&
-                body.mime_type &&
+                // body.mime_type &&
                 body.provider
             ) {
                 const ack = await handler({ token: authHeader, session: body })
@@ -83,7 +82,6 @@ function lancer({ signingSecret }: { signingSecret: string }) {
                     if (!isVerified) {
                         return res.status(400).send()
                     }
-                    
                 } else {
                     return res.status(400).send()
                 }
