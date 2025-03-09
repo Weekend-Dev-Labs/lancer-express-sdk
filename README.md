@@ -1,4 +1,4 @@
-# `@lancer/express`
+# `lancer-express-sdk`
 
 **Lancer Server SDK for Express.js**
 
@@ -6,7 +6,7 @@
 
 ## **Overview**
 
-`@lancer/express` is the official server-side SDK for integrating **Lancer** with Express.js applications. It simplifies handling **Lancer webhooks** and **authentication workflows**, ensuring secure and efficient communication between your Express.js backend and Lancer's APIs.
+`lancer-express-sdk` is the official server-side SDK for integrating **Lancer** with Express.js applications. It simplifies handling **Lancer webhooks** and **authentication workflows**, ensuring secure and efficient communication between your Express.js backend and Lancer's APIs.
 
 ---
 
@@ -23,7 +23,7 @@
 Install the SDK via npm:
 
 ```bash
-npm install @lancer/express
+npm install lancer-express-sdk
 ```
 
 ---
@@ -35,7 +35,7 @@ npm install @lancer/express
 Create a reusable instance of the `lancer` function with your `signingSecret` for signature verification. Store this in a shared module for easy access across your API routes.
 
 ```typescript
-import lancer from "@lancer/express";
+import lancer from "lancer-express-sdk";
 
 const lancerInstance = lancer({
   signingSecret: "<your-lancer-signing-secret>",
